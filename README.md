@@ -1,13 +1,13 @@
 # Food-ca3-fewd
-NOTE: What is a modal? Here is a link which you can refer to for a better understanding of what a modal is.
+NOTE: What is a modal? Here is a link ( https://www.w3schools.com/w3css/w3css_modal.asp ) which you can refer to for a better understanding of what a modal is.
 
-References and API: To get some idea about the UI part – you can refer to this website.
+References and API: To get some idea about the UI part – you can refer to this website ( https://www.themealdb.com/ ).
 
-API to fetch a random meal
+API to fetch a random meal ( https://www.themealdb.com/api/json/v1/1/random.php )
 
-API to fetch a meal based upon a category (for eg purpose – the aforementioned API is considering “seafood” as the category)
+API to fetch a meal based upon a category ( https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood ) (for eg purpose – the aforementioned API is considering “seafood” as the category)
 
-All the above API’s are taken from this website.
+All the above API’s are taken from this website ( https://www.themealdb.com/api.php ) .
 
 Mandatory Features of the website:
 
