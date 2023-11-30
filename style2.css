@@ -24,9 +24,10 @@ section{
     align-items:center;
     padding:8vh 5vw;
 }
-section header{
-    background-color:#93C895;
-    border-radius:13px;
+section header {
+    background-color: #93C895;
+    border-radius: 13px;
+    padding: 10px; /* Add padding for better visual appearance */
 }
 .Island{
     font-family:'inria sans',sans-serif;
