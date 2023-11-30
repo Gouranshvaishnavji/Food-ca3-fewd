@@ -1,11 +1,12 @@
 fetch('https://www.themealdb.com/api/json/v1/1/random.php')
   .then(response => response.json())
   .then(parsedDataRandom => {
+    console.log('meal')
     console.log(parsedDataRandom);
-    displayRandomData(parsedDataRandom.meals);
+    dataRandom(parsedDataRandom.meals);
   });
 
-function displayRandomData(meals) {
+function dataRandom(meals) {
 
         const randomMeal = meals[Math.floor(Math.random() * meals.length)];
     
@@ -15,19 +16,19 @@ function displayRandomData(meals) {
         const title = document.createElement('h2');
         title.textContent = randomMeal.strMeal;
     
-        // const paragraph = document.createElement('p');
-        // paragraph.textContent = randomMeal.strInstructions;
-    
-    const randomImgs = document.querySelector('#get-meal');
-    randomImgs.appendChild(image);
-    randomImgs.appendChild(title);
-    // randomImgs.appendChild(paragraph);
+    const todayImg = document.querySelector('#get-meal');
+    todayImg.appendChild(image);
+    todayImg.appendChild(title);
+
 }
 
 fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
 .then(response => response.json())
 .then((parsedDataSearch) => {
+  console.log('meal')
   console.log(parsedDataSearch)
+
+  const randomMeal = parsedDataSearch.meals[Math.floor(Math.random() * parsedDataSearch.meals.length)];
 
 })
 
@@ -92,7 +93,7 @@ meals.forEach(meal => {
 
 
 
-function displayRandomData(meals) {
+function dataRandom(meals) {
   const randomMeal = meals[Math.floor(Math.random() * meals.length)];
 
   const image = document.createElement('img');
@@ -101,10 +102,10 @@ function displayRandomData(meals) {
   const title = document.createElement('h1');
   title.textContent = randomMeal.strMeal;
 
-  const randomImgs = document.querySelector('.randomImgs');
+  const todayImg = document.querySelector('.todayImg');
 
 
-  randomImgs.addEventListener('click', function() {
+  todayImg.addEventListener('click', function() {
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${randomMeal.idMeal}`)
       .then(response => response.json())
       .then(data => {
@@ -118,9 +119,9 @@ function displayRandomData(meals) {
         }
 
  
-        const modal = document.createElement('span');
-        modal.classList.add('modal');
-        modal.innerHTML = `
+        const modals = document.createElement('span');
+        modals.classList.add('modal');
+        modals.innerHTML = `
           <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Ingredients</h2>
@@ -129,18 +130,18 @@ function displayRandomData(meals) {
             </ul>
           </div>
         `;
-        document.body.appendChild(modal);
+        document.body.appendChild(modals);
 
 
-        const closeButton = modal.querySelector('.close');
+        const closeButton = modals.querySelector('.close');
         closeButton.addEventListener('click', function() {
-          modal.remove();
+          modals.remove();
         });
       })
       .catch(error => {
-        console.error('Error:', error);
+        console.error('Error is here', error);
       });
   });
-  randomImgs.appendChild(image);
-  randomImgs.appendChild(title);
+  todayImg.appendChild(image);
+  todayImg.appendChild(title);
 }
