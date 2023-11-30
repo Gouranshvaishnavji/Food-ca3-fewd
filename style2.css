@@ -24,7 +24,7 @@ section{
     align-items:center;
     padding:8vh 5vw;
 }
-section header {
+ header {
     background-color: #93C895;
     border-radius: 13px;
     padding: 10px; /* Add padding for better visual appearance */
@@ -135,9 +135,9 @@ footer{
     section{
         background-image: url(./header1280.jpg);
     }
-    section header{
+ header{
         position:relative;
-        margin-top: 5px;
+        margin-top: 0.5px;
     }
     .modal-content {
         top: 50%;
