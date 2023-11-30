@@ -8,12 +8,12 @@
 }
 body{
     background-color:#131316 ;
-    overflow: visible;
+    overflow: auto;
 }
 section{
     display: flex;
     flex-direction: column;
-    background-image:url('./assets/Header.jpg');
+    background-image:url('./Header.jpg');
     color: aliceblue;
     width: 100%;
     background-position: center;
@@ -73,6 +73,9 @@ section{
 .randomImgs img{
     width: 350px;
     border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .modal-content{
     background-color: #1e1ecf;
@@ -95,7 +98,7 @@ section{
 }
 #meal-category{
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+      grid-template-columns: repeat(2, 1fr); /* Create 3 equal-width columns */
       gap: 10px; 
       padding-left:5vw;
       align-content:center;
@@ -108,9 +111,108 @@ footer{
     flex-direction: column;
     padding: 10px;
 }
-@media screen and (max-width: 1118px) {
-    div{
-        font-size: 100px;
+
+@media screen and (max-width: 1280px) {
+    body{
+        background-color: #e26913;
+        overflow: auto;
     }
+    footer{
+        background-color: rgb(22, 22, 20);
+        color: #e7c4c4;
+    }
+    section{
+        background-image: url(./header1280.jpg);
+    }
+    section header{
+        position:relative;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+
+    /* Section */
+  
+    section {
+      flex-direction: column;
+      padding: 20vh 10vw;
+      background-image:url('./header720.jpg');
+      background-position: center;
+      background-size: cover;
+      width :100%;
+    }
+    /* section h1 */
+    #main h1{
+        font-size: 2rem;
+        background-color: #2b2827;
+        padding: 5px;
+        border-radius: 12px;
+        color: white;
+        
+    }
+
+    /* section header */
+    section header {
+      top: 12px;
+    }
+    /* Island */
+  
+    .Island {
+      display: block;
+      align-items: centre;
+    }
+  
+    /* Main h1 */
+  
+    #main h1 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+  
+    /* Faaltu */
+  
+    .faaltu {
+      font-size: 3rem;
+      color: rgb(3, 243, 3);
+    }
+  
+    /* Search */
+  
+    #search {
+      width: 80vw;
+      height: 4vh;
+      border-radius: 10px 5px;
+      font-size: 1.3rem;
+    }
+  
+    /* Meal-category */
+  
+    #meal-category {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 5px;
+      padding:2.5vh 4.5vw ;
+    }
+  
+    /* Random-imgs */
+  
+    .randomImgs img {
+      width: 200px;
+      
+    }
+  
+    /* meal-category img */
+  
+    #meal-category div img {
+      width: 200px;
+    }
+    /* Modal-content */
+  
+    .modal-content {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
   }
 
