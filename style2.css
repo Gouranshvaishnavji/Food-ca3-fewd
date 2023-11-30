@@ -128,6 +128,11 @@ footer{
         position:relative;
         margin-top: 5px;
     }
+    .modal-content {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 }
 
 @media only screen and (max-width: 720px) {
@@ -137,7 +142,7 @@ footer{
     section {
       flex-direction: column;
       padding: 20vh 10vw;
-      background-image:url('./header720.jpg');
+
       background-position: center;
       background-size: cover;
       width :100%;
