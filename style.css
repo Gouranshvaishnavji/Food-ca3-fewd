@@ -10,7 +10,7 @@ body{
     overflow: visible;
 }
 #main{
-background-image:url('./assets/Header.jpg');
+background-image:url('./Header.jpg');
 color: aliceblue;
 height:110vh;
 width: 100%;
