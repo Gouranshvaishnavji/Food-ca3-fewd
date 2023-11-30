@@ -43,6 +43,13 @@ section header {
     border-radius: 12px;
     
 }
+header h1{
+    font-size: 2rem;
+    background-color: #DB884C;
+    padding: 5px;
+    border-radius: 12px;
+    
+}
 
 .faaltu{
     font-size:4rem ;
@@ -160,6 +167,7 @@ footer{
         color: white;
         
     }
+    
 
     /* section header */
     section header {
@@ -178,6 +186,14 @@ footer{
       font-size: 1.3rem;
       margin-bottom: 10px;
     }
+  header h1 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+        background-color: #2b2827;
+        padding: 5px;
+        border-radius: 12px;
+        color: white;
+    }   
   
     /* Faaltu */
   
