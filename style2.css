@@ -140,10 +140,11 @@ footer{
         margin-top: 0.5px;
     }
     .modal-content {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+        
+      
 }
 
 @media only screen and (max-width: 720px) {
@@ -234,10 +235,10 @@ footer{
     /* Modal-content */
   
     .modal-content {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+    top: 70%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+
   
   }
 
